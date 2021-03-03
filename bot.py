@@ -1,5 +1,15 @@
 import discord
 
+token = ""
+text = []
+
+with open ('token.txt', 'rt') as myfile:  # Open lorem.txt for reading
+    for mytoken in myfile:
+        text.append(mytoken)
+        token = text[0]
+
+
+
 client = discord.Client()
 
 @client.event
